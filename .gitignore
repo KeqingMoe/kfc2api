@@ -1,0 +1,6 @@
+node_modules/
+.wrangler/
+.config/
+.npm-cache/
+.dryrun/
+wrangler.jsonc

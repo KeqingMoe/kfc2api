@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  "name": "kfc2api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/v1/*"]
+  },
+
+  "observability": {
+    "enabled": true
+  }
+
+  // 绑定自己的域名：把 example.com 换成你的域，且该域已托管在同一 Cloudflare 账号
+  // "routes": [{ "pattern": "llm.example.com", "custom_domain": true }]
+}
